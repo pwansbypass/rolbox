@@ -162,7 +162,6 @@ function initLibrary()
 
     local coloredGradients = {}
 
-
     function library:SetColor(color)
         for _, obj in next, coloredGradients do
             obj.Color = ColorSequence.new{
@@ -171,13 +170,10 @@ function initLibrary()
             }
         end
 
-
         library.color = color
     end
 
-
     local gui = utility.create("ScreenGui")
-
 
     inputService.InputBegan:Connect(function(input)
         if input.KeyCode == library.keybind then
@@ -185,7 +181,6 @@ function initLibrary()
             gui.Enabled = library.toggled
         end
     end)
-
 
     if syn and syn.protect_gui then
         syn.protect_gui(gui)
@@ -1653,7 +1648,7 @@ function initLibrary()
                         BackgroundTransparency = 1,
                         BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                         FontSize = Enum.FontSize.Size14,
-                        TextSize = 13,
+                        TextSize = 14,
                         TextColor3 = Color3.fromRGB(255, 255, 255),
                         Text = name,
                         Font = Enum.Font.Gotham,
@@ -1685,7 +1680,7 @@ function initLibrary()
                         BackgroundTransparency = 1,
                         Position = UDim2.new(0, 8, 0, 0),
                         FontSize = Enum.FontSize.Size12,
-                        TextSize = 12,
+                        TextSize = 16,
                         TextColor3 = (multiChoice and (#default > 0 and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180))) or default and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180),
                         Text = multiChoice and (#default > 0 and table.concat(default, ", ") or "NONE") or (default or "NONE"),
                         Font = Enum.Font.Gotham,
@@ -1772,7 +1767,7 @@ function initLibrary()
                             BackgroundTransparency = 1,
                             BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                             FontSize = Enum.FontSize.Size12,
-                            TextSize = 12,
+                            TextSize = 16,
                             TextColor3 = Color3.fromRGB(255, 255, 255),
                             Text = tostring(opt),
                             Font = current == opt and Enum.Font.GothamSemibold or Enum.Font.Gotham,
