@@ -155,7 +155,7 @@ function initLibrary()
         flags = {}, 
         toggled = true,
         color = Color3.fromRGB(255, 0, 0),
-        keybind = Enum.KeyCode.RightControl, 
+        keybind = Enum.KeyCode.Delete, 
         dragSpeed = 0.1
     }    
 
