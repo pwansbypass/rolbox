@@ -1320,7 +1320,7 @@ do
 						)
 
 						TextButton2.InputEnded:Connect(function(Mouse)
-							if Mouse.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+							if Mouse.UserInputType == Enum.UserInputType.MouseButton1 or Mouse.UserInputType == Enum.UserInputType.Touch then
 								Gui.Data.SetInteractionsEnabled(true)
 							end
 						end)
@@ -1330,7 +1330,7 @@ do
 								if Gui.InteractionsEnabled ~= false or TextButton2.Transparency > 0 then
 									return
 								end
-								if Mouse.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+								if Mouse.UserInputType == Enum.UserInputType.MouseButton1 or Mouse.UserInputType == Enum.UserInputType.Touch then
 									if DropdownContent.Visible == false then
 										return
 									end
