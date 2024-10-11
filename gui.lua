@@ -151,8 +151,8 @@ do
 			GuiSet = {}
 		end
 		GuiSet = GuiSet or {}
-		GuiSet.Theme = GuiSet.Theme or Color3.fromRGB(102, 255, 102)
-		GuiSet.Theme2 = GuiSet.Theme2 or Color3.fromRGB(255, 204, 229)
+		GuiSet.Theme = GuiSet.Theme or Color3.fromRGB(0, 255, 0)
+		GuiSet.Theme2 = GuiSet.Theme2 or Color3.fromRGB(0, 204, 0)
 		Gui.Data.SetTheme(GuiSet.Theme,GuiSet.Theme2)
 		local CreatedGui = {}
 
