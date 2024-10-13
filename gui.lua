@@ -614,7 +614,7 @@ do
 					TextBox.Font = Enum.Font.Code
 					TextBox.TextXAlignment = Enum.TextXAlignment.Left
 					TextBox.Parent = Inner
-					TextBox.Active = true
+					TextBox.Active = false
 					TextBox.Focused:Connect(
 						function()
 							if Gui.InteractionsEnabled ~= true then
