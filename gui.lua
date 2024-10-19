@@ -1,4 +1,9 @@
+if game:GetService("CoreGui"):FindFirstChild("SpringGui") then
+	game:GetService("CoreGui"):FindFirstChild("SpringGui"):Destroy()
+end
+
 local Gui
+
 Gui = {
 	Data = {
 		SetInteractionsEnabled = function(Value)
@@ -151,8 +156,8 @@ do
 			GuiSet = {}
 		end
 		GuiSet = GuiSet or {}
-		GuiSet.Theme = GuiSet.Theme or Color3.fromRGB(0, 128, 255)
-		GuiSet.Theme2 = GuiSet.Theme2 or Color3.fromRGB(0, 102, 204)
+		GuiSet.Theme = GuiSet.Theme or Color3.fromRGB(0, 255, 0)
+		GuiSet.Theme2 = GuiSet.Theme2 or Color3.fromRGB(0, 204, 0)
 		Gui.Data.SetTheme(GuiSet.Theme,GuiSet.Theme2)
 		local CreatedGui = {}
 
@@ -300,7 +305,7 @@ do
 			Tab.Text = Name
 			Tab.Font = Enum.Font.SourceSans
 			Tab.Parent = ScrollingFrame
-			Tab.MouseButton1Down:Connect(
+			Tab.TouchTap:Connect(
 				function()
 					CreatedTab:SetDefault()
 				end
@@ -508,7 +513,7 @@ do
 						end
 					)
 
-					TextButton.MouseButton1Down:Connect(
+					TextButton.TouchTap:Connect(
 						function()
 							if Gui.InteractionsEnabled ~= true then
 								return
@@ -614,7 +619,6 @@ do
 					TextBox.Font = Enum.Font.Code
 					TextBox.TextXAlignment = Enum.TextXAlignment.Left
 					TextBox.Parent = Inner
-					TextBox.Active = false
 					TextBox.Focused:Connect(
 						function()
 							if Gui.InteractionsEnabled ~= true then
@@ -763,7 +767,7 @@ do
 						)
 						Callback(Settings.Enabled)
 					end
-					Toggle.MouseButton1Down:Connect(CreatedToggle.Fire)
+					Toggle.TouchTap:Connect(CreatedToggle.Fire)
 					return CreatedToggle
 				end
 
@@ -967,7 +971,7 @@ do
 						return math.floor(...)
 					end, nil
 
-					TextButton10.MouseButton1Down:Connect(function(x, y)
+					TextButton10.TouchTap:Connect(function(x, y)
 						if Gui.InteractionsEnabled ~= true then
 							return
 						end
@@ -1164,7 +1168,7 @@ do
 						end
 					end
 
-					TextButton1.MouseButton1Down:Connect(
+					TextButton1.TouchTap:Connect(
 						function()
 							if Gui.InteractionsEnabled ~= true and Gui.FocusedDropdown ~= Name .. Settings.Id then
 								return
@@ -1852,7 +1856,7 @@ do
 			ImageButton1.ImageColor3 = Gui.Theme
 			ImageButton1.Image = "rbxassetid://3224442404"
 			ImageButton1.Parent = Buttons1
-			ImageButton1.MouseButton1Down:Connect(
+			ImageButton1.TouchTap:Connect(
 				function()
 					if AlreadyClosing then
 						return
@@ -1873,7 +1877,7 @@ do
 			ImageButton2.ImageColor3 = Gui.Theme
 			ImageButton2.Image = "rbxassetid://4661609682"
 			ImageButton2.Parent = Buttons1
-			ImageButton2.MouseButton1Down:Connect(
+			ImageButton2.TouchTap:Connect(
 				function()
 					if AlreadyClosing then
 						return
