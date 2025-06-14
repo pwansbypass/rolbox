@@ -13,14 +13,14 @@ local Buy_Seeds = {
     ["Coconut"] = false,
     ["Cactus"] = false,
     ["Dragon Fruit"] = false,
-    ["Mango"] = false,
+    ["Mango"] = true,
     ["Grape"] = false,
-    ["Mushroom"] = false,
+    ["Mushroom"] = true,
     ["Pepper"] = false,
     ["Cacao"] = false,
-	["Beanstalk"] = false,
-	["Ember Lily"] = false,
-	["Sugar Apple"] = false
+	["Beanstalk"] = true,
+	["Ember Lily"] = true,
+	["Sugar Apple"] = true
 }
 
 local Buy_GearShop = {
@@ -28,14 +28,14 @@ local Buy_GearShop = {
 	["Harvest Tool"] = false,
     ["Favorite Tool"] = false,
 	["Cleaning Spray"] = false,
-    ["Watering Can"] = false,
-    ["Recall Wrench"] = false,
-    ["Trowel"] = false,
-    ["Basic Sprinkler"] = false,
-    ["Advanced Sprinkler"] = false,
-    ["Godly Sprinkler"] = false,
-    ["Master Sprinkler"] = false,
-	["Lightning Rod"] = false
+    ["Watering Can"] = true,
+    ["Recall Wrench"] = true,
+    ["Trowel"] = true,
+    ["Basic Sprinkler"] = true,
+    ["Advanced Sprinkler"] = true,
+    ["Godly Sprinkler"] = true,
+    ["Master Sprinkler"] = true,
+	["Lightning Rod"] = true
 }
 
 local Buy_PetEggs = {
@@ -43,15 +43,15 @@ local Buy_PetEggs = {
     ["Uncommon Egg"] = false,
     ["Rare Egg"] = false,
     ["Legendary Egg"] = false,
-    ["Mythical Egg"] = false,
-    ["Bug Egg"] = false,
+    ["Mythical Egg"] = true,
+    ["Bug Egg"] = true,
     ["Night Egg"] = false,
     ["Bee Egg"] = false
 }
 
 local Buy_HoneyShop = {
-    ["Bee Egg"] = {buy = false, priority = 1},
-    ["Flower Seed Pack"] = {buy = false, priority = 2},
+    ["Bee Egg"] = {buy = true, priority = 1},
+    ["Flower Seed Pack"] = {buy = true, priority = 2},
     ["Honey Sprinkler"] = {buy = false, priority = 3},
 	["Nectar Staff"] = {buy = false, priority = 4},
 	["Pollen Radar"] = {buy = false, priority = 5},
