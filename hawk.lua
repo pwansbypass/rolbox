@@ -618,7 +618,7 @@ function HawkLib:Window(Win)
 							OpenFrame.BackgroundColor3 = HawkLib.Themes[Theme].TitleBar
 							OpenFrame.Position = UDim2.new(0, 0, 0, 282)
 							OpenFrame.Selectable = true
-							OpenFrame.Size = UDim2.new(0, 50, 0, 25)
+							OpenFrame.Size = UDim2.new(0, 90, 0, 40)
 							OpenFrame.Visible = false
 							OpenFrame.ZIndex = 0
 							MakeDraggable(OpenFrame, OpenFrame)
